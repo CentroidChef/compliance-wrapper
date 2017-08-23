@@ -4,7 +4,7 @@ maintainer_email 'you@example.com'
 license 'All Rights Reserved'
 description 'Installs/Configures compliance-wrapper'
 long_description 'Installs/Configures compliance-wrapper'
-version '0.1.0'
+version '0.1.3'
 chef_version '>= 12.1' if respond_to?(:chef_version)
 
 # The `issues_url` points to the location where issues for this cookbook are
@@ -18,3 +18,5 @@ chef_version '>= 12.1' if respond_to?(:chef_version)
 # a Supermarket.
 #
 # source_url 'https://github.com/<insert_org_here>/compliance-wrapper'
+
+depends 'audit', '~> 4.2.0'
